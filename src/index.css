@@ -1,3 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFF7ED;
+    font-family: "Inter", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -242,6 +257,10 @@ i[class*='van-type-'] {
     text-decoration: none;
 }
 
+.van-detail-container .back-button:visited {
+    
+}
+
 .van-detail-container .back-button span {
     text-decoration: underline;
 }
@@ -297,4 +316,42 @@ i[class*='van-type-'] {
     color: #161616;
     text-decoration: underline;
     font-weight: 600;
+}
+
+.host-van-link-wrapper {
+    color: unset;
+    text-decoration: unset;
+}
+
+.host-vans-list {
+    padding-inline: 26px;
+}
+
+.host-vans-title {
+    padding-inline: 26px;
+}
+
+.host-van-single {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 15px;
+    padding-block: 18px;
+    padding-left: 24px;
+}
+
+.host-van-single > img {
+    height: 70px;
+    border-radius: 5px;
+    margin-right: 17px;
+}
+
+.host-van-info h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-block: 10px;
+}
+
+.host-van-info p {
+    margin-block: 10px;
 }

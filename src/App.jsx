@@ -4,15 +4,20 @@ import Home from "./pages/Vans/Home"
 import About from "./pages/Vans/About"
 import Vans from "./pages/Vans/Vans"
 import VansDetail from "./pages/Vans/VansDetail"
-import Layout from "./components/Layout"
+
 import Dashboard from "./pages/Host/Dashboard"
 import Income from "./pages/Host/Income"
 import Reviews from "./pages/Host/Reviews"
+import HostVansDetails from "./pages/Host/HostVansDetails"
+import HostVans from "./pages/Host/HostVans"
+
+import Layout from "./components/Layout"
 import HostLayout from "./Components/HostLayout"
+
 
 import "./server"
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
       <Routes>
@@ -27,11 +32,11 @@ function App() {
             <Route index element={<Dashboard />} />
             <Route path="income" element={<Income />} />
             <Route path="reviews" element={<Reviews />} />
+            <Route path="vans" element={<HostVans />} />
+            <Route path="vans/:id" element={<HostVansDetails />} />
           </Route>
         </Route>
       </Routes>
     </BrowserRouter>
   )
 }
-
-export default App
