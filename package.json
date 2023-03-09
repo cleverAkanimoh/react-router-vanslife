@@ -1,15 +1,15 @@
 {
   "name": "react-router-lesson",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
-  "homepage": "https://https://cleverakanimoh.github.io/react-router-vanslife",
+  "homepage": "https://cleverakanimoh.github.io/react-router-vanslife/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "npm run build",
-    "predeploy": "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "gh-pages": "^5.0.0",
