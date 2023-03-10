@@ -2,17 +2,25 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html, body {
     margin: 0;
     padding: 0;
     background-color: #FFF7ED;
-    font-family: "Inter", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+h4 {
+    font: 500 1rem 'georgia' !important;
 }
 
 #root {
-    
     display: grid;
     place-items: center;
+    width: 100%;
 }
 
 body::-webkit-scrollbar {
@@ -266,7 +274,7 @@ footer {
     font-weight: 500;
     border: none;
     border-radius: 5px;
-    text-decoration: underline;
+    text-decoration: none;
     background-color: transparent;
     color: #4D4D4D;
 }
