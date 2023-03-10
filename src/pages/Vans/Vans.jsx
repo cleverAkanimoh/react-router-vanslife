@@ -33,6 +33,33 @@ export default function () {
         </div>
     ))
 
+    // for link
+
+    function genNewSearchParamString(key, value) {
+        const sp = new URLSearchParams(searchParams)
+        if (value === null) {
+          sp.delete(key)
+        } else {
+          sp.set(key, value)
+        }
+        return `?${sp.toString()}`
+      }
+      console.log(genNewSearchParamString('type', 'value'));
+
+    //   for button
+      function handleFilterChange(key, value) {
+        setSearchParams(prevParams => {
+          if (value === null) {
+            prevParams.delete(key)
+          } else {
+            prevParams.set(key, value)
+          }
+          return prevParams
+        })
+      }
+
+      console.log(handleFilterChange('type', 'value'));
+
     return (
         <div className="van-list-container">
             <h2>Explore our vans options</h2>
