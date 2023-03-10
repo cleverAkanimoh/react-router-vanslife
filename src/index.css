@@ -118,12 +118,13 @@ footer {
     background-size: cover;
     min-height: 350px;
     color: white;
-    padding: 45px 23px;
+    padding: 50px 23px;
+    text-align: center;
 }
 
 .home-container h1 {
     font-weight: 700;
-    font-size: 2.25rem;
+    font-size: 2.3rem;
     line-height: 42px;
 }
 
@@ -136,8 +137,8 @@ footer {
     text-align: center;
     text-decoration: none;
     background-color: #FF8C38;
-    border: none;
     width: 100%;
+    max-width: 70%;
     margin-top: 27px;
     padding-block: .75rem;
     color: white;
