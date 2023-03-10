@@ -12,7 +12,9 @@ html, body {
     background-color: #FFF7ED;
     font-family: "Source Sans Pro", sans-serif;
 }
-
+button {
+    font-family: "Source Sans Pro", sans-serif;
+}
 h4 {
     font: 500 1rem 'georgia' !important;
 }
@@ -228,6 +230,16 @@ footer {
 .van-list-container button {
     margin-right: 20px;
     cursor: pointer;
+}
+
+.van-list-filter-buttons a {
+    text-decoration: none;
+    margin-right: 3px;
+    transition: all 0.3s;
+}
+
+.clear-filters:hover {
+    text-decoration: underline;
 }
 
 .van-type {

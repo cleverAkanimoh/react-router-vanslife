@@ -37,7 +37,36 @@ export default function () {
         <div className="van-list-container">
             <h2>Explore our vans options</h2>
             <div className="van-list-filter-buttons">
-                <Link
+                {/* <button
+                    className="van-type simple"
+                    onClick={() => setSearchParams("type=simple")}>simple</button>
+                
+                <button
+                    className="van-type luxury"
+                    onClick={() => setSearchParams("type=luxury")}>luxury</button>
+                
+                <button
+                    className="van-type rugged"
+                    onClick={() => setSearchParams("type=rugged")}>rugged</button>
+                
+                <button
+                    className="van-type clear-filters"
+                    onClick={() => setSearchParams("")}>Clear</button> */}
+
+                <button 
+                    className="van-type simple"
+                    onClick={() => setSearchParams({ type: "simple" })}>simple</button>
+                <button 
+                    className="van-type luxury"
+                    onClick={() => setSearchParams({ type: "luxury" })}>luxury</button>
+                <button 
+                    className="van-type rugged"
+                    onClick={() => setSearchParams({ type: "rugged" })}>rugged</button>
+                <button 
+                    className="van-type clear-filters"
+                    onClick={() => setSearchParams({})}>Clear</button>
+
+                {/* <Link
                     to="?type=simple"
                     className="van-type simple"
                 >Simple</Link>
@@ -50,9 +79,9 @@ export default function () {
                     className="van-type rugged"
                 >Rugged</Link>
                 <Link
-                    to="."
+                    to="?"
                     className="van-type clear-filters"
-                >Clear filter</Link>
+                >Clear filter</Link> */}
 
             </div>
             <div className="van-list">
