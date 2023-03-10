@@ -1,7 +1,12 @@
+
+
 export default function () {
+
     return (
         <>
-            <h1>vans pricing component</h1>
+            <h1>
+                details component
+            </h1>
         </>
     )
 }
