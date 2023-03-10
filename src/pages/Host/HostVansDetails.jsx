@@ -1,4 +1,4 @@
-import { useParams, Link, Outlet } from "react-router-dom"
+import { useParams, Link, NavLink, Outlet } from "react-router-dom"
 import { useState, useEffect } from "react";
 
 export default function HostVanDetail() {
@@ -37,6 +37,11 @@ export default function HostVanDetail() {
                     </div>
                 </div>
             </div>
+
+            <nav className="host-van-detail-nav">
+                <NavLink></NavLink>
+            </nav>
+
             <Outlet />
         </section>
     )
